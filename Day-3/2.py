@@ -1,12 +1,20 @@
 '''
-Write a program that determines if a number entered by the user is divisible by 5. For example:
+Write a program to calculate the area of a circle given its radius and a triangle given its base and height. For example:
 
-Input: Enter a number: 25
-Output: 25 is divisible by 5.
+Input: Radius: 5, Base: 10, Height: 4
+Output:
+Area of Circle: 78.5
+Area of Triangle: 20
+
 '''
 
-num=int(input("Enter the number "))
-if(num%5!=0):
-    print(f"{num} is not divisible by 5")
-else:
-    print(f"{num} is divisible by 5")
+#area of circle= pi*r*r
+#area of Triangle=1/2 * Base * Height
+
+from math import pi
+
+radius=5  # for flexibility u can use input
+Base=10
+Height=4
+
+print(f"Area of Circle {pi*radius*radius}\nArea of Triangle {1/2*Base * Height}")
