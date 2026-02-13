@@ -1,10 +1,16 @@
 '''
-Write a program that verifies if a number entered by the user is a multiple of 7. For example:
+Write a program where the user enters two integers (divisor and dividend) and calculates their quotient and remainder. For example:
 
-Input: Enter a number: 14
-Output: 14 is a multiple of 7.
+Input: Dividend: 22, Divisor: 7
+Output:
+Quotient: 3
+Remainder: 1
 '''
+Divident=22
+Divisor = 7
 
-num = int(input("Enter the number "))
-if num%7==0:
-    print(f"{num} is multiple of 7.")
+Quotient=Divident//Divisor
+remainder=Divident%Divisor
+
+print("Quotient: ",Quotient)
+print("Remainder: ",remainder)
